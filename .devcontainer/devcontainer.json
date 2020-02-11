@@ -5,7 +5,8 @@
 	"name": "Docker in Docker Compose",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "docker-in-docker",
-	"workspaceFolder": "/workspace",
+	"workspaceFolder": "/workspace/src",
+	// "workspaceFolder": "/app",
 	
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
