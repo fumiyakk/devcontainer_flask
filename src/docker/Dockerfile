@@ -54,10 +54,16 @@
 # # Switch back to dialog for any ad-hoc use of apt-get
 # ENV DEBIAN_FRONTEND=dialog
 
-FROM python:3.7.4
+FROM python:3.7-buster
  
 # ARG project_directory
 # WORKDIR $project_directory
- 
-RUN pip install flask
 
+COPY ./src /app/
+WORKDIR /app/
+
+RUN pip install pipenv
+
+RUN pipenv install --dev
+
+CMD ["python", "src/hello.py"]

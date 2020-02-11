@@ -15,7 +15,7 @@ services:
 
     build: 
       context: ../
-      dockerfile: Dockerfile
+      dockerfile: src/docker/Dockerfile
 
     ports:
       - "5550:5000"
